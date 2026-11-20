@@ -221,3 +221,37 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# Course rules: do not commit binary artifacts (model checkpoints, weights,
+# datasets and archives). Store them externally and commit links instead.
+# ---------------------------------------------------------------------------
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Training artifacts and logs
+checkpoints/
+wandb/
+lightning_logs/
+runs/
+
+# macOS
+.DS_Store
